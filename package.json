@@ -1,0 +1,27 @@
+{
+  "name": "handlebars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:dev": "concurrently \"webpack -p\" \"handlebars -f src/js/myTempJsFile.js src/views/partials/myTemplate.handlebars\" \"nodemon src/js/server.js --ext html,scss,css,js,json,hbs\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars-loader": "^1.7.0",
+    "handlebars-template-loader": "^1.0.0",
+    "nodemon": "^1.18.4",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@types/handlebars": "^4.0.39"
+  }
+}
